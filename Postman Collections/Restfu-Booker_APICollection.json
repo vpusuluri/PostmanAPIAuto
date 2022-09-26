@@ -32,7 +32,7 @@
 							}
 						}
 					],
-					"_postman_id": "3d1d087c-2a4c-4c8b-9dc9-566b56fd1dfd",
+					"id": "3d1d087c-2a4c-4c8b-9dc9-566b56fd1dfd",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -44,7 +44,7 @@
 					"response": []
 				}
 			],
-			"_postman_id": "cbfdce8b-ee69-471a-a985-a6e45be71ed4"
+			"id": "cbfdce8b-ee69-471a-a985-a6e45be71ed4"
 		},
 		{
 			"name": "ABC Folder",
@@ -73,7 +73,7 @@
 							}
 						}
 					],
-					"_postman_id": "4b510fff-c057-43ca-a9a6-027e3675ecfb",
+					"id": "4b510fff-c057-43ca-a9a6-027e3675ecfb",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -85,7 +85,7 @@
 					"response": []
 				}
 			],
-			"_postman_id": "60750013-dd46-4d52-9347-1c0262b029f7"
+			"id": "60750013-dd46-4d52-9347-1c0262b029f7"
 		},
 		{
 			"name": "BookerTokenGenerator",
@@ -135,7 +135,7 @@
 					}
 				}
 			],
-			"_postman_id": "81ffe4d0-c7d6-433f-b501-faa9e1dfdd4a",
+			"id": "81ffe4d0-c7d6-433f-b501-faa9e1dfdd4a",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -149,10 +149,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"username\" : \"admin\",\n    \"password\" : \"password123\"\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\n    \"username\" : \"admin\",\n    \"password\" : \"password123\"\n}"
 				},
 				"url": "https://restful-booker.herokuapp.com/auth"
 			},
@@ -242,7 +239,7 @@
 					}
 				}
 			],
-			"_postman_id": "b9c38372-1d38-4e9c-9212-186f9b729c7b",
+			"id": "b9c38372-1d38-4e9c-9212-186f9b729c7b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
 				"disabledSystemHeaders": {
@@ -259,10 +256,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"firstname\" : \"{{$randomFirstName}}\",\n    \"lastname\" : \"{{$randomLastName}}\",\n    \"totalprice\" : {{$randomInt}},\n    \"depositpaid\" : {{$randomBoolean}},\n    \"bookingdates\" : {\n        \"checkin\" : \"{{$randomDateRecent}}\",\n        \"checkout\" : \"{{$randomDateFuture}}\"\n    },\n    \"additionalneeds\" : \"{{$randomCompanyName}}\"\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\n    \"firstname\" : \"{{$randomFirstName}}\",\n    \"lastname\" : \"{{$randomLastName}}\",\n    \"totalprice\" : {{$randomInt}},\n    \"depositpaid\" : {{$randomBoolean}},\n    \"bookingdates\" : {\n        \"checkin\" : \"{{$randomDateRecent}}\",\n        \"checkout\" : \"{{$randomDateFuture}}\"\n    },\n    \"additionalneeds\" : \"{{$randomCompanyName}}\"\n}"
 				},
 				"url": "https://restful-booker.herokuapp.com/booking/"
 			},
@@ -272,22 +266,12 @@
 			"name": "GetAllBookings",
 			"event": [
 				{
-					"listen": "prerequest",
-					"script": {
-						"id": "cf8a2039-2c94-4607-a393-da308415ded5",
-						"exec": [
-							"console.log(\"GetAllBookings Request Pre-Request Script Message\")"
-						],
-						"type": "text/javascript"
-					}
-				},
-				{
 					"listen": "test",
 					"script": {
-						"id": "1812de54-dbdf-4452-a15f-80a5eac342b1",
+						"id": "e06ba54f-8b8e-4391-94f2-da9e7dc8f405",
 						"exec": [
 							"console.log(\"GetAllBookings Request Tests Message\")\r",
-							"pm.test('Last created booking, status 200', function(){\r",
+							"pm.test('GetAllBookings, status 200', function(){\r",
 							"    pm.response.to.have.status(200);\r",
 							"})\r",
 							"\r",
@@ -321,9 +305,19 @@
 						],
 						"type": "text/javascript"
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "44c6b88a-318d-42ed-be67-cea1566bad83",
+						"exec": [
+							"console.log(\"GetAllBookings Request Pre-Request Script Message\")"
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
-			"_postman_id": "9b4ff01c-27df-4ee7-9c71-d3608eb835eb",
+			"id": "9b4ff01c-27df-4ee7-9c71-d3608eb835eb",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -370,7 +364,7 @@
 					}
 				}
 			],
-			"_postman_id": "c8f41698-6c08-43a2-9289-50d431012f97",
+			"id": "c8f41698-6c08-43a2-9289-50d431012f97",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -379,10 +373,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {}
-					}
+					"raw": ""
 				},
 				"url": "https://restful-booker.herokuapp.com/booking/{{BookingId}}"
 			},
@@ -461,7 +452,7 @@
 					}
 				}
 			],
-			"_postman_id": "4476e859-5e11-4505-9367-c0ed164097b1",
+			"id": "4476e859-5e11-4505-9367-c0ed164097b1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -476,10 +467,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"firstname\": \"Andy\",\r\n        \"lastname\": \"Flower\",\r\n        \"totalprice\": 630,\r\n        \"depositpaid\": true,\r\n        \"bookingdates\": {\r\n            \"checkin\": \"2022-09-23\",\r\n            \"checkout\": \"2022-12-29\"\r\n        },\r\n        \"additionalneeds\": \"Infosys\"\r\n    \r\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\r\n        \"firstname\": \"Andy\",\r\n        \"lastname\": \"Flower\",\r\n        \"totalprice\": 630,\r\n        \"depositpaid\": true,\r\n        \"bookingdates\": {\r\n            \"checkin\": \"2022-09-23\",\r\n            \"checkout\": \"2022-12-29\"\r\n        },\r\n        \"additionalneeds\": \"Infosys\"\r\n    \r\n}"
 				},
 				"url": "https://restful-booker.herokuapp.com/booking/{{BookingId}}"
 			},
@@ -518,7 +506,7 @@
 					}
 				}
 			],
-			"_postman_id": "b612d9df-214f-4a3e-9d90-259875f28bab",
+			"id": "b612d9df-214f-4a3e-9d90-259875f28bab",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -543,10 +531,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {}
-					}
+					"raw": ""
 				},
 				"url": "https://restful-booker.herokuapp.com/booking/{{BookingId}}"
 			},
