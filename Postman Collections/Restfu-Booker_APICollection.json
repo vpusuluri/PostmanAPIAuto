@@ -2,6 +2,7 @@
 	"info": {
 		"_postman_id": "43592f3b-a53c-45ea-b935-c52f8e58c586",
 		"name": "Restful-Booker APIs Collection",
+		"description": "<div class=\"postman-run-button\"\ndata-postman-action=\"collection/fork\"\ndata-postman-var-1=\"20568909-43592f3b-a53c-45ea-b935-c52f8e58c586\"\ndata-postman-collection-url=\"entityId=20568909-43592f3b-a53c-45ea-b935-c52f8e58c586&entityType=collection&workspaceId=ba7dc3e8-13e9-4d8c-925b-711ab73027f7\"\ndata-postman-param=\"env%5BStage%5D=W3sia2V5IjoiVG9rZW4iLCJ2YWx1ZSI6IiIsImVuYWJsZWQiOnRydWUsInR5cGUiOiJhbnkifSx7ImtleSI6IkJvb2tpbmdJZCIsInZhbHVlIjoiIiwiZW5hYmxlZCI6dHJ1ZSwidHlwZSI6ImFueSJ9LHsia2V5IjoiY29va2llIiwidmFsdWUiOiIiLCJlbmFibGVkIjp0cnVlLCJ0eXBlIjoiYW55In1d\"></div>\n<script type=\"text/javascript\">\n  (function (p,o,s,t,m,a,n) {\n    !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });\n    !o.getElementById(s+t) && o.getElementsByTagName(\"head\")[0].appendChild((\n      (n = o.createElement(\"script\")),\n      (n.id = s+t), (n.async = 1), (n.src = m), n\n    ));\n  }(window, document, \"_pm\", \"PostmanRunObject\", \"https://run.pstmn.io/button.js\"));\n</script>",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
