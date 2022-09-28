@@ -52,7 +52,26 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://api.getpostman.com/collections/$uid?apikey=$apikey",
+							"protocol": "https",
+							"host": [
+								"api",
+								"getpostman",
+								"com"
+							],
+							"path": [
+								"collections",
+								"$uid"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "$apikey"
+								}
+							]
+						}
 					},
 					"response": []
 				}
