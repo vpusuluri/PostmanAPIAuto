@@ -571,9 +571,14 @@
 	],
 	"variable": [
 		{
-			"id": "dbe98a88-7a75-42cf-b2f8-8f163eefe353",
+			"id": "410690d7-5bcb-4488-b4c0-20729b2d8f32",
 			"key": "APIKEY",
 			"value": "PMAK-63343337f9a9f11168ace184-c20c5dd94da38af6a428ed8f51c31749fd"
+		},
+		{
+			"id": "10bfc546-a983-4a65-986b-098be2994564",
+			"key": "UID",
+			"value": "20568909-43592f3b-a53c-45ea-b935-c52f8e58c586"
 		}
 	]
 }
