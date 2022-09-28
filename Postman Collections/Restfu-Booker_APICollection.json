@@ -568,5 +568,12 @@
 			},
 			"response": []
 		}
+	],
+	"variable": [
+		{
+			"id": "98ec8132-3c1c-4260-b97f-605ee5e9928a",
+			"key": "APIKEY",
+			"value": "PMAK-63343337f9a9f11168ace184-c20c5dd94da38af6a428ed8f51c31749fd"
+		}
 	]
 }
