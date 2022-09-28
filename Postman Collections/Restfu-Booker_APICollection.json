@@ -54,7 +54,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.getpostman.com/collections?apikey={{APIKEY}}",
+							"raw": "https://api.getpostman.com/collections/{{UID}}?apikey={{APIKey}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -62,12 +62,13 @@
 								"com"
 							],
 							"path": [
-								"collections"
+								"collections",
+								"{{UID}}"
 							],
 							"query": [
 								{
 									"key": "apikey",
-									"value": "{{APIKEY}}"
+									"value": "{{APIKey}}"
 								}
 							]
 						}
@@ -571,12 +572,12 @@
 	],
 	"variable": [
 		{
-			"id": "410690d7-5bcb-4488-b4c0-20729b2d8f32",
+			"id": "800c03a4-4ed3-4d2b-86d0-b29f01afcf2c",
 			"key": "APIKEY",
 			"value": "PMAK-63343337f9a9f11168ace184-c20c5dd94da38af6a428ed8f51c31749fd"
 		},
 		{
-			"id": "10bfc546-a983-4a65-986b-098be2994564",
+			"id": "2d27dd95-1da2-4327-b399-16425b7897ff",
 			"key": "UID",
 			"value": "20568909-43592f3b-a53c-45ea-b935-c52f8e58c586"
 		}
