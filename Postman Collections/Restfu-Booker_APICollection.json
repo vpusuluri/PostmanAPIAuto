@@ -572,14 +572,19 @@
 	],
 	"variable": [
 		{
-			"id": "800c03a4-4ed3-4d2b-86d0-b29f01afcf2c",
+			"id": "99699c92-2cff-47c4-b8ef-3d59694cb641",
 			"key": "APIKEY",
 			"value": "PMAK-63343337f9a9f11168ace184-c20c5dd94da38af6a428ed8f51c31749fd"
 		},
 		{
-			"id": "2d27dd95-1da2-4327-b399-16425b7897ff",
+			"id": "ad806615-ce20-4e5a-8c99-3096fda63b1d",
 			"key": "UID",
 			"value": "20568909-43592f3b-a53c-45ea-b935-c52f8e58c586"
+		},
+		{
+			"id": "e032dd9e-fa16-4f3b-bef8-e12d8c0706f2",
+			"key": "APIKey",
+			"value": "PMAK-63343337f9a9f11168ace184-c20c5dd94da38af6a428ed8f51c31749fd"
 		}
 	]
 }
